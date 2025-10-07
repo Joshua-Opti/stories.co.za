@@ -329,8 +329,8 @@ class PerformanceOptimizer {
 
     preloadCriticalImages() {
         const criticalImages = [
-            'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2053&q=80',
-            'https://images.unsplash.com/photo-1600607687644-c7171b42498b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2053&q=80'
+            'modern-luxury-living-room-interior-white-marble-wall-beige-sofa-round-table-plants-contemporary-home-design-stylish-furniture-387293355.webp',
+            'interior-design-spacious-bright-studio-apartment-scandinavian-style-warm-pastel-white-beige-colors-trendy-furniture-304680576.webp'
         ];
         
         criticalImages.forEach(src => {
