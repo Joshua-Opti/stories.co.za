@@ -646,6 +646,8 @@ body {
 }
 
 .service-icon i {
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900 !important;
     font-size: 2rem;
     color: white;
     display: block !important;
@@ -693,6 +695,33 @@ body {
     color: var(--primary-color);
 }
 
+/* Ensure all Font Awesome icons are visible and properly colored */
+.contact-info i {
+    color: var(--primary-color) !important;
+    font-size: 1rem;
+}
+
+.social-links a {
+    color: white;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    background: var(--primary-color) !important;
+    color: white !important;
+}
+
+.hero-nav-btn i,
+.testimonial-nav i {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.hero-nav-btn:hover i,
+.testimonial-nav:hover i {
+    color: white;
+}
+
 /* Social links hover state */
 .social-links a:hover {
     background: var(--primary-color);
@@ -714,15 +743,52 @@ body {
 
 /* Service feature checkmarks - handled in detailed services section */
 
-/* Temporary debugging for service icons */
+/* Service icons - clean styling */
 .service-card .service-icon {
-    background: var(--primary-color) !important;
-    border: 2px solid #ff0000 !important; /* Red border for debugging */
+    background: var(--primary-color);
 }
 
 .service-card .service-icon i {
-    color: white !important;
-    font-size: 2rem !important;
+    color: white;
+    font-size: 2rem;
+}
+
+/* Comprehensive Font Awesome Icon Styling */
+/* Ensure all Font Awesome icons render correctly */
+.fas, .fab, .far, .fal, .fad {
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900 !important;
+    display: inline-block !important;
+    font-style: normal !important;
+    font-variant: normal !important;
+    text-rendering: auto !important;
+    line-height: 1 !important;
+}
+
+/* Solid icons */
+.fas {
+    font-weight: 900 !important;
+}
+
+/* Brand icons */
+.fab {
+    font-family: "Font Awesome 6 Brands" !important;
+    font-weight: 400 !important;
+}
+
+/* Regular icons */
+.far {
+    font-weight: 400 !important;
+}
+
+/* Light icons */
+.fal {
+    font-weight: 300 !important;
+}
+
+/* Duotone icons */
+.fad {
+    font-weight: 900 !important;
 }
 
 /* CTA Section */
@@ -1676,6 +1742,8 @@ body {
 }
 
 .service-card .service-icon i {
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900 !important;
     font-size: 2rem;
     color: white;
     display: block !important;
@@ -1715,6 +1783,8 @@ body {
     left: 0;
     color: var(--primary-color);
     font-weight: bold;
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900 !important;
 }
 
 /* Detailed Services */
