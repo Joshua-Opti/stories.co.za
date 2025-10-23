@@ -629,13 +629,15 @@ body {
     height: 80px;
     background: var(--primary-color);
     border-radius: 50%;
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: center;
     margin: 0 auto 30px;
     transition: var(--transition);
-    visibility: visible;
-    opacity: 1;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative;
+    z-index: 10;
 }
 
 .service-card:hover .service-icon {
@@ -646,7 +648,9 @@ body {
 .service-icon i {
     font-size: 2rem;
     color: white;
-    display: block;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
 .service-card h3 {
@@ -709,6 +713,17 @@ body {
 }
 
 /* Service feature checkmarks - handled in detailed services section */
+
+/* Temporary debugging for service icons */
+.service-card .service-icon {
+    background: var(--primary-color) !important;
+    border: 2px solid #ff0000 !important; /* Red border for debugging */
+}
+
+.service-card .service-icon i {
+    color: white !important;
+    font-size: 2rem !important;
+}
 
 /* CTA Section */
 .cta-section {
@@ -1644,13 +1659,15 @@ body {
     height: 80px;
     background: var(--primary-color);
     border-radius: 50%;
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: center;
     margin: 0 auto 30px;
     transition: var(--transition);
-    visibility: visible;
-    opacity: 1;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative;
+    z-index: 10;
 }
 
 .service-card:hover .service-icon {
@@ -1661,7 +1678,9 @@ body {
 .service-card .service-icon i {
     font-size: 2rem;
     color: white;
-    display: block;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
 .service-card h3 {
