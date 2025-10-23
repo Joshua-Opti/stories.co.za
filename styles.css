@@ -222,6 +222,7 @@ body {
     letter-spacing: 4px;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-transform: uppercase;
+    color: var(--text-color);
 }
 
 .hero-subtitle {
@@ -233,15 +234,13 @@ body {
     line-height: 1.6;
     max-width: 600px;
     margin-left: auto;
+    color: var(--text-color);
     margin-right: auto;
     letter-spacing: 2px;
 }
 
 .hero-buttons {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: none;
 }
 
 .btn {
@@ -279,30 +278,19 @@ body {
 }
 
 .btn-secondary {
-    background: transparent;
-    color: var(--primary-color);
-    border-color: var(--primary-color);
-    font-weight: 400;
-    letter-spacing: 0.5px;
+    display: none;
 }
 
 .btn-secondary:hover {
-    background: var(--primary-color);
-    color: var(--text-color);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    display: none;
 }
 
 .btn-outline {
-    background: transparent;
-    color: var(--text-color);
-    border-color: var(--text-color);
+    display: none;
 }
 
 .btn-outline:hover {
-    background: var(--text-color);
-    color: white;
-    transform: translateY(-2px);
+    display: none;
 }
 
 .hero-navigation {
@@ -668,40 +656,38 @@ body {
 }
 
 .services-cta {
-    text-align: center;
-    margin-top: 60px;
+    display: none;
 }
 
 /* CTA Section */
 .cta-section {
     padding: var(--section-padding);
-    background: linear-gradient(135deg, var(--text-color), var(--primary-color));
-    color: white;
+    background: var(--light-background);
+    color: var(--text-color);
     text-align: center;
 }
 
 .cta-content h2 {
-    font-family: var(--font-primary);
+    font-family: var(--font-headings);
     font-size: 3rem;
     font-weight: 600;
     margin-bottom: 20px;
+    color: var(--text-color);
 }
 
 .cta-content p {
     font-size: 1.2rem;
     margin-bottom: 40px;
     opacity: 0.9;
+    color: var(--text-color);
 }
 
 .cta-section .btn-primary {
-    background: var(--primary-color);
-    border-color: var(--primary-color);
+    display: none;
 }
 
 .cta-section .btn-primary:hover {
-    background: transparent;
-    color: var(--primary-color);
-    border-color: var(--primary-color);
+    display: none;
 }
 
 /* Footer */
@@ -840,6 +826,13 @@ body {
 }
 
 @media (max-width: 768px) {
+    .hero-title,
+    .hero-subtitle,
+    .page-hero h1,
+    .page-hero p {
+        color: var(--text-color);
+    }
+    
     .logo-image {
         height: 40px;
         max-width: 150px;
@@ -949,6 +942,13 @@ body {
 }
 
 @media (max-width: 480px) {
+    .hero-title,
+    .hero-subtitle,
+    .page-hero h1,
+    .page-hero p {
+        color: var(--text-color);
+    }
+    
     .container {
         padding: 0 20px;
     }
@@ -1017,6 +1017,13 @@ body {
 }
 
 @media (max-width: 320px) {
+    .hero-title,
+    .hero-subtitle,
+    .page-hero h1,
+    .page-hero p {
+        color: var(--text-color);
+    }
+    
     .container {
         padding: 0 15px;
     }
@@ -1119,6 +1126,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     width: 100%;
+    color: var(--text-color);
 }
 
 .page-hero p {
@@ -1130,6 +1138,7 @@ body {
     position: relative;
     z-index: 2;
     text-align: center;
+    color: var(--text-color);
     margin: 0 auto;
     letter-spacing: 4px;
 }
