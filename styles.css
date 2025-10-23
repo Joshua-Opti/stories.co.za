@@ -615,6 +615,7 @@ body {
     border-radius: 15px;
     transition: var(--transition);
     border: 1px solid rgba(0, 0, 0, 0.1);
+    background: white;
 }
 
 .service-card:hover {
@@ -633,6 +634,8 @@ body {
     justify-content: center;
     margin: 0 auto 30px;
     transition: var(--transition);
+    visibility: visible;
+    opacity: 1;
 }
 
 .service-card:hover .service-icon {
@@ -643,6 +646,7 @@ body {
 .service-icon i {
     font-size: 2rem;
     color: white;
+    display: block;
 }
 
 .service-card h3 {
@@ -1601,6 +1605,8 @@ body {
     justify-content: center;
     margin: 0 auto 30px;
     transition: var(--transition);
+    visibility: visible;
+    opacity: 1;
 }
 
 .service-card:hover .service-icon {
@@ -1611,6 +1617,7 @@ body {
 .service-card .service-icon i {
     font-size: 2rem;
     color: white;
+    display: block;
 }
 
 .service-card h3 {
