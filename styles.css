@@ -768,16 +768,23 @@ body {
     transform: translateY(-2px);
 }
 
-.contact-info p {
+.footer .contact-info {
+    background: transparent;
+    padding: 0;
+}
+
+.footer .contact-info p {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-bottom: 15px;
     color: rgba(255, 255, 255, 0.8);
+    background: transparent;
 }
 
-.contact-info i {
+.footer .contact-info i {
     color: var(--accent-sage);
+    min-width: 16px;
 }
 
 .footer-bottom {

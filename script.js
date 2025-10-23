@@ -273,6 +273,7 @@ class FormHandler {
         e.preventDefault();
         const form = e.target;
         const formData = new FormData(form);
+        const data = Object.fromEntries(formData);
         
         // Show loading state
         const submitBtn = form.querySelector('button[type="submit"]');
@@ -280,13 +281,36 @@ class FormHandler {
         submitBtn.textContent = 'Sending...';
         submitBtn.disabled = true;
         
-        // Simulate form submission (replace with actual endpoint)
-        setTimeout(() => {
-            this.showSuccessMessage();
-            form.reset();
-            submitBtn.textContent = originalText;
-            submitBtn.disabled = false;
-        }, 2000);
+        // Create email body
+        const emailBody = `
+New Contact Form Submission:
+
+Name: ${data.firstName} ${data.lastName}
+Email: ${data.email}
+Phone: ${data.phone || 'Not provided'}
+Project Type: ${data.projectType}
+Service Needed: ${data.serviceType}
+Budget: ${data.budget || 'Not specified'}
+Timeline: ${data.timeline || 'Not specified'}
+Message: ${data.message}
+
+---
+Sent from Stories Architecture & Interior Design website
+        `;
+        
+        // Create mailto link
+        const mailtoLink = `mailto:cait@storiesdesign.co.za?subject=New Contact Form Submission&body=${encodeURIComponent(emailBody)}`;
+        
+        // Open email client
+        window.location.href = mailtoLink;
+        
+        // Show success message
+        alert('Thank you for your message! Your email client will open to send the message.');
+        
+        // Reset form
+        form.reset();
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
     }
 
     showSuccessMessage() {
