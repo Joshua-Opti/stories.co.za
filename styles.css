@@ -76,13 +76,16 @@ body {
     height: 80px;
 }
 
-.nav-logo h2 {
-    font-family: var(--font-headings);
-    font-size: 28px;
-    font-weight: 600;
-    color: var(--text-color);
-    letter-spacing: 8px;
-    text-transform: uppercase;
+.logo-image {
+    height: 50px;
+    width: auto;
+    max-width: 200px;
+    object-fit: contain;
+    transition: var(--transition);
+}
+
+.logo-image:hover {
+    transform: scale(1.05);
 }
 
 .nav-menu {
@@ -837,8 +840,9 @@ body {
 }
 
 @media (max-width: 768px) {
-    .nav-logo h2 {
-        letter-spacing: 3px;
+    .logo-image {
+        height: 40px;
+        max-width: 150px;
     }
     
     .nav-menu {
@@ -993,9 +997,9 @@ body {
         min-height: 48px;
     }
     
-    .nav-logo h2 {
-        font-size: 24px;
-        letter-spacing: 3px;
+    .logo-image {
+        height: 35px;
+        max-width: 120px;
     }
     
     .nav-menu {
@@ -1015,6 +1019,11 @@ body {
 @media (max-width: 320px) {
     .container {
         padding: 0 15px;
+    }
+    
+    .logo-image {
+        height: 30px;
+        max-width: 100px;
     }
     
     .hero-title {
